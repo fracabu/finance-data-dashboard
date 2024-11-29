@@ -1,0 +1,30 @@
+# Core packages
+streamlit>=1.31.0
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Data visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# Excel handling
+openpyxl>=3.1.2
+xlsxwriter>=3.1.9
+
+# Data analysis and machine learning
+scipy>=1.12.0
+scikit-learn>=1.4.0
+
+# Technical analysis
+ta>=0.10.0
+
+# HTTP requests
+requests>=2.31.0
+
+# Additional useful packages
+python-dotenv>=1.0.0  # for environment variables
+yfinance>=0.2.37      # for financial data
+pandas-ta>=0.3.14b    # additional technical analysis tools
+streamlit-aggrid>=0.3.4  # for better data tables
+streamlit-plotly-events>=0.0.6  # for interactive plots

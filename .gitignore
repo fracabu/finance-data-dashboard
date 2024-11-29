@@ -1,0 +1,133 @@
+# Python Virtual Environment
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# Python Cache Files
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# Distribution / Packaging
+dist/
+build/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Development Environment
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Environment Variables and Secrets
+.env
+.env.local
+.env.*.local
+.streamlit/secrets.toml
+*.key
+*.pem
+
+# Logs and Databases
+*.log
+*.sql
+*.sqlite
+logs/
+*.db
+
+# Temporary Files
+tmp/
+temp/
+.temp/
+.tmp/
+
+# Office Files
+~$*.xlsx
+~$*.xls
+~$*.doc
+~$*.docx
+*.xlk
+
+# Data Files
+data/
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.feather
+*.h5
+*.pkl
+*.joblib
+
+# Financial Data Cache
+.yfinance/
+.alphavantage/
+.iex/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Testing
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Documentation
+docs/_build/
+site/
+
+# API Keys and Credentials
+**/credentials/
+**/secrets/
+api_keys.yaml
+credentials.json
+
+# Deployment
+*.env.production
+*.env.staging
+docker-compose.override.yml
+
+# Project Specific
+charts/
+backtest_results/
+trading_data/
+market_analysis/

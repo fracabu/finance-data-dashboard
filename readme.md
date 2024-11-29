@@ -1,4 +1,6 @@
 # 📊 Financial Analytics Dashboard - Premium Version 
+![image](https://github.com/user-attachments/assets/b78d82b3-c35a-408c-a7f2-d86491260559)
+
 
 ## 🌟 [English]
 
@@ -71,6 +73,7 @@ plotly>=5.18.0
 
 ### 🎯 Panoramica
 Una piattaforma completa di analisi finanziaria costruita con Streamlit, che offre capacità avanzate di analisi dati, indicatori tecnici e strumenti di gestione del portafoglio.
+![image](https://github.com/user-attachments/assets/cb2dda45-fce2-4692-90df-13854bf57e5b)
 
 ### ⚡ Avvio Rapido
 ```bash

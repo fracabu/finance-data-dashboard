@@ -1,238 +1,228 @@
-# 📊 Financial Analytics Dashboard - Premium Version 
+# Advanced Finance Analytics Dashboard
 
-## 🌟 [English]
+## Overview
+The **Advanced Finance Analytics Dashboard** is an interactive Streamlit application designed to analyze financial data, provide visual insights, and perform technical and risk analytics. The dashboard supports file uploads, data filtering, technical indicators, risk assessment, portfolio analysis, and API integrations.
 
-### 🎯 Overview
-A comprehensive financial analytics platform built with Streamlit, offering advanced data analysis capabilities, technical indicators, and portfolio management tools.
+## Features
 
-### ⚡ Quick Start
-```bash
-# Clone the repository
-git clone [your-repo-url]
+### 1. Main Dashboard
+- Upload financial datasets in **CSV**, **Excel**, or **JSON** format.
+- Automatically parse and process data, including date handling.
+- Filter data by date range and symbols.
+- Display key performance indicators (KPIs) such as:
+  - Total rows
+  - Total volume
+  - Volatility
+  - Sharpe ratio
+  - Average daily return
+- Export filtered datasets in CSV, Excel, or JSON formats.
+- Enhanced visualizations:
+  - Candlestick charts
+  - Simple Moving Average (SMA) and Exponential Moving Average (EMA) overlays
 
-# Install dependencies
-pip install -r requirements.txt
+### 2. Advanced Analytics
+- Generate a **Correlation Heatmap** for selected assets.
+- Display statistical summaries (mean, median, etc.).
+- Perform **Principal Component Analysis (PCA)** for dimensionality reduction.
+- **K-Means Clustering** for grouping assets based on price and volume.
+- **Linear Regression Analysis** for price trends and future predictions.
 
-# Run the application
-streamlit run main.py
-```
+### 3. Technical Analysis
+- Calculate and visualize:
+  - **Relative Strength Index (RSI)**
+  - **Moving Average Convergence Divergence (MACD)**
+  - **Bollinger Bands**
+- Set customizable parameters for each indicator.
 
-### 🚀 Features
+### 4. Risk Analytics
+- Key risk metrics:
+  - Value at Risk (VaR)
+  - Expected Shortfall
+  - Maximum Drawdown
+  - Kurtosis and skewness of returns
+- Analyze historical drawdowns.
+- Visualize return distributions.
 
-#### 💼 Data Management
-- 📁 Multi-format support (CSV, Excel, JSON)
-- ⚡ Real-time data filtering
-- 📅 Custom date range selection
-- 🔄 Multi-symbol support
+### 5. Portfolio Analysis
+- Correlation matrix for portfolio assets.
+- Annual returns and volatility for selected assets.
+- Cumulative return plots.
+- Risk-return scatter plots for profiling.
 
-#### 📈 Analytics Features
-- **📊 Main Dashboard**
-  * Real-time visualization
-  * Candlestick charts
-  * Volume analysis
-  * Moving averages
+### 6. Settings
+- Customize:
+  - Chart themes and dimensions.
+  - Anomaly detection thresholds.
+  - Data handling methods (e.g., outlier detection, missing value imputation).
+- Save preferences for future sessions.
 
-- **🔬 Advanced Analytics**
-  * Correlation heatmaps
-  * PCA Analysis
-  * K-means clustering
-  * Linear Regression
-  * Statistical summaries
+### 7. API Integration
+- Authenticate using API keys for secured endpoints.
+- Available endpoints:
+  - Market Summary
+  - Technical Indicators
+  - Historical Data
+  - Generate Synthetic Data
+- Fetch data dynamically from APIs with options for auto-refresh and export.
 
-- **📉 Technical Analysis**
-  * RSI
-  * MACD
-  * Bollinger Bands
-  * Custom indicators
+## Installation
 
-- **⚠️ Risk Analytics**
-  * VaR calculations
-  * Maximum Drawdown
-  * Returns distribution
-  * Risk metrics
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd <repository_folder>
+   ```
 
-### 🛠️ Technical Requirements
-```txt
-# Core packages
-streamlit>=1.31.0
-pandas>=2.2.0
-numpy>=1.26.0
+2. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-# Data visualization
-matplotlib>=3.8.0
-seaborn>=0.13.0
-plotly>=5.18.0
-```
-[View full requirements.txt](requirements.txt)
+3. Create a `.env` file with the following environment variables:
+   ```
+   API_KEY=<your_api_key>
+   API_SECRET=<your_api_secret>
+   FLASK_DEBUG=<True/False>
+   PORT=<port_number>
+   ```
 
----
+4. Run the application:
+   ```bash
+   streamlit run main.py
+   ```
 
-## 🌟 [Italiano]
+## Usage
+1. Launch the app and upload your financial dataset.
+2. Explore the tabs for analysis:
+   - Use the **Main Dashboard** to get a quick overview and export data.
+   - Dive into **Advanced Analytics** for clustering, PCA, and statistical summaries.
+   - Use **Technical Analysis** to compute and visualize indicators.
+   - Assess portfolio risk and performance under the **Risk Analytics** and **Portfolio** tabs.
+3. Integrate API data to fetch live financial insights.
 
-### 🎯 Panoramica
-Una piattaforma completa di analisi finanziaria costruita con Streamlit, che offre capacità avanzate di analisi dati, indicatori tecnici e strumenti di gestione del portafoglio.
+## Built With
+- **Python**: Core programming language.
+- **Streamlit**: Web application framework.
+- **Plotly**: Interactive data visualizations.
+- **Scikit-learn**: Machine learning algorithms.
+- **TA-Lib**: Technical analysis indicators.
 
-### ⚡ Avvio Rapido
-```bash
-# Clona il repository
-git clone [url-repository]
+## Contributors
+Created with ❤️ using Streamlit.
 
-# Installa le dipendenze
-pip install -r requirements.txt
-
-# Avvia l'applicazione
-streamlit run main.py
-```
-
-### 🚀 Funzionalità
-
-#### 💼 Gestione Dati
-- 📁 Supporto multi-formato (CSV, Excel, JSON)
-- ⚡ Filtraggio dati in tempo reale
-- 📅 Selezione intervallo date personalizzato
-- 🔄 Supporto multi-simbolo
-
-#### 📈 Funzionalità Analitiche
-- **📊 Dashboard Principale**
-  * Visualizzazione in tempo reale
-  * Grafici a candele
-  * Analisi dei volumi
-  * Medie mobili
-
-- **🔬 Analisi Avanzata**
-  * Mappe di correlazione
-  * Analisi PCA
-  * Clustering K-means
-  * Regressione Lineare
-  * Riassunti statistici
-
-- **📉 Analisi Tecnica**
-  * RSI
-  * MACD
-  * Bande di Bollinger
-  * Indicatori personalizzabili
-
-- **⚠️ Analisi del Rischio**
-  * Calcoli VaR
-  * Drawdown Massimo
-  * Distribuzione rendimenti
-  * Metriche di rischio
-
-### 🛠️ Requisiti Tecnici
-```txt
-# Pacchetti principali
-streamlit>=1.31.0
-pandas>=2.2.0
-numpy>=1.26.0
-
-# Visualizzazione dati
-matplotlib>=3.8.0
-seaborn>=0.13.0
-plotly>=5.18.0
-```
-[Visualizza requirements.txt completo](requirements.txt)
+Ecco il **README** in italiano:
 
 ---
 
-### 🌐 Links
-- 📚 [Documentation](docs/)
-- 🐛 [Issue Tracker](issues/)
-- 📧 [Support](mailto:support@example.com)
+# Advanced Finance Analytics Dashboard
 
-### 📝 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Panoramica
+**Advanced Finance Analytics Dashboard** è un'applicazione interattiva sviluppata con Streamlit, progettata per analizzare dati finanziari, fornire approfondimenti visivi e offrire strumenti avanzati di analisi tecnica e gestione del rischio. La dashboard supporta il caricamento di file, il filtraggio dei dati, l'analisi di indicatori tecnici, la valutazione del rischio, l'analisi del portafoglio e l'integrazione con API.
 
----
+## Funzionalità
 
+### 1. Dashboard Principale
+- Caricamento di dataset finanziari in formato **CSV**, **Excel** o **JSON**.
+- Parsing e processamento automatico dei dati, inclusa la gestione delle date.
+- Filtraggio dei dati per intervallo di date e simboli.
+- Visualizzazione dei KPI principali:
+  - Numero totale di righe
+  - Volume totale
+  - Volatilità
+  - Indice di Sharpe
+  - Rendimento giornaliero medio
+- Esportazione dei dataset filtrati in formato CSV, Excel o JSON.
+- Visualizzazioni avanzate:
+  - Grafici Candlestick
+  - Overlay di Medie Mobili Semplici (SMA) e Medie Mobili Esponenziali (EMA)
 
-# Comandi Base per Setup e Avvio Progetto
+### 2. Analisi Avanzata
+- Generazione di una **Mappa di Correlazione** per gli asset selezionati.
+- Visualizzazione di riepiloghi statistici (media, mediana, ecc.).
+- **Analisi delle Componenti Principali (PCA)** per ridurre le dimensioni dei dati.
+- **Clustering K-Means** per raggruppare gli asset in base a prezzo e volume.
+- **Analisi di Regressione Lineare** per individuare trend di prezzo e previsioni future.
 
-# 1. Creazione e attivazione ambiente virtuale
-# Su Windows:
-python -m venv venv
-.\venv\Scripts\activate
+### 3. Analisi Tecnica
+- Calcolo e visualizzazione di indicatori tecnici:
+  - **Relative Strength Index (RSI)**
+  - **Moving Average Convergence Divergence (MACD)**
+  - **Bande di Bollinger**
+- Parametri personalizzabili per ciascun indicatore.
 
-# Su Mac/Linux:
-python -m venv venv
-source venv/bin/activate
+### 4. Analisi del Rischio
+- Metriche di rischio principali:
+  - Value at Risk (VaR)
+  - Expected Shortfall
+  - Maximum Drawdown
+  - Curtosi e asimmetria dei rendimenti
+- Analisi dei drawdown storici.
+- Visualizzazione della distribuzione dei rendimenti.
 
-# 2. Installazione dipendenze
-pip install -r requirements.txt
+### 5. Analisi del Portafoglio
+- Matrice di correlazione per gli asset del portafoglio.
+- Ritorni annuali e volatilità degli asset selezionati.
+- Grafici dei rendimenti cumulativi.
+- Diagrammi a dispersione rischio-rendimento per il profiling.
 
-# 3. Avvio applicazione
-streamlit run app.py
+### 6. Impostazioni
+- Personalizzazione:
+  - Tema e dimensioni dei grafici.
+  - Soglie per il rilevamento di anomalie.
+  - Metodi di gestione dei dati (es. rilevamento degli outlier, gestione dei valori mancanti).
+- Salvataggio delle preferenze per sessioni future.
 
-# Comandi Aggiuntivi Utili
+### 7. Integrazione API
+- Autenticazione tramite chiavi API per endpoint protetti.
+- Endpoint disponibili:
+  - Sommario del Mercato
+  - Indicatori Tecnici
+  - Dati Storici
+  - Generazione di Dati Sintetici
+- Recupero dinamico dei dati tramite API con opzioni di aggiornamento automatico ed esportazione.
 
-# Aggiornare pip
-python -m pip install --upgrade pip
+## Installazione
 
-# Vedere lista pacchetti installati
-pip list
+1. Clona il repository:
+   ```bash
+   git clone <repository_url>
+   cd <repository_folder>
+   ```
 
-# Creare/aggiornare requirements.txt
-pip freeze > requirements.txt
+2. Installa le dipendenze richieste:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-# Disattivare ambiente virtuale
-deactivate
+3. Crea un file `.env` con le seguenti variabili di ambiente:
+   ```
+   API_KEY=<la_tua_chiave_api>
+   API_SECRET=<il_tuo_segreto_api>
+   FLASK_DEBUG=<True/False>
+   PORT=<numero_porta>
+   ```
 
-# In caso di problemi con le dipendenze, reinstallazione pulita:
-pip uninstall -r requirements.txt -y
-pip install -r requirements.txt
+4. Avvia l'applicazione:
+   ```bash
+   streamlit run main.py
+   ```
 
-# Per avviare su una porta specifica:
-streamlit run app.py --server.port 8080
+## Utilizzo
+1. Avvia l'app e carica il tuo dataset finanziario.
+2. Esplora i tab per effettuare analisi:
+   - Usa la **Dashboard Principale** per ottenere una panoramica rapida ed esportare i dati.
+   - Esplora l'**Analisi Avanzata** per clustering, PCA e riepiloghi statistici.
+   - Usa l'**Analisi Tecnica** per calcolare e visualizzare indicatori tecnici.
+   - Valuta il rischio e le performance del portafoglio nei tab **Analisi del Rischio** e **Portafoglio**.
+3. Integra dati API per ottenere approfondimenti finanziari in tempo reale.
 
-# Per abilitare il reload automatico:
-streamlit run app.py --server.runOnSave true
+## Tecnologie Utilizzate
+- **Python**: Linguaggio di programmazione principale.
+- **Streamlit**: Framework per applicazioni web.
+- **Plotly**: Visualizzazioni dati interattive.
+- **Scikit-learn**: Algoritmi di machine learning.
+- **TA-Lib**: Indicatori di analisi tecnica.
 
-# Per visualizzare informazioni di debug:
-streamlit run app.py --logger.level=debug
+## Contributori
+Creato con ❤️ utilizzando Streamlit.
 
-# Per rendere l'app accessibile da altri dispositivi nella rete:
-streamlit run app.py --server.address 0.0.0.0
-
-# Per pulire la cache di Streamlit:
-streamlit cache clear
-
-
-
-# 1. Creazione della directory del progetto
-C:\Users\utente>mkdir sales-dashboard
-C:\Users\utente>cd sales-dashboard
-
-# 2. Creazione dell'ambiente virtuale
-C:\Users\utente\sales-dashboard>python -m venv venv
-
-# 3. Attivazione dell'ambiente virtuale
-C:\Users\utente\sales-dashboard>venv\Scripts\activate
-
-# 4. Installazione delle dipendenze
-(venv) C:\Users\utente\sales-dashboard>pip install -r requirements.txt
-
-# 5. Avvio dell'applicazione
-(venv) C:\Users\utente\sales-dashboard>streamlit run main.py
-```
-
-Questa è la sequenza esatta dall'inizio alla fine che ho seguito per:
-1. Creare la cartella del progetto
-2. Creare l'ambiente virtuale
-3. Attivarlo
-4. Installare le dipendenze 
-5. Avviare l'app
-
-Quando riavvii il PC o apri una nuova sessione del terminale, dovrai solo:
-1. Navigare nella directory del progetto
-2. Attivare l'ambiente virtuale 
-3. Avviare l'app con l'ultimo comando
-
-# 1. Accesso alla directory del progetto
-C:\Users\utente>cd sales-dashboard
-
-# 2. Attivazione ambiente virtuale
-C:\Users\utente\sales-dashboard>venv\Scripts\activate
-
-# 3. Avvio applicazione
-(venv) C:\Users\utente\sales-dashboard>streamlit run main.py
-
-Made with 🩸🩸 ⚡ 🔥 by fracabu 

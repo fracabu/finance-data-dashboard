@@ -179,34 +179,9 @@ def calculate_kpi(data):
         kpis["Total Volume"] = data["Volume"].sum()
     return kpis
 
-# Sidebar per il tema
-theme = st.sidebar.radio("Select Theme:", ["Light", "Dark"])
 
-# Tema CSS
-if theme == "Light":
-    st.markdown("""
-    <style>
-    :root {
-        --bg-primary: #f9fbfd;
-        --bg-secondary: #ffffff;
-        --text-primary: #1b2a4e;
-        --text-secondary: #6e84a3;
-        --accent: #2c7be5;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-else:
-    st.markdown("""
-    <style>
-    :root {
-        --bg-primary: #0f172a;
-        --bg-secondary: #1e293b;
-        --text-primary: #f8fafc;
-        --text-secondary: #94a3b8;
-        --accent: #38bdf8;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+
+
 
 # Titolo della dashboard
 st.title("Advanced Finance Analytics Dashboard")
@@ -867,12 +842,19 @@ with tab7:
     # API Integration Features
     if st.session_state.authenticated:
         st.subheader("Available Endpoints")
+        # endpoints = {
+        #     "Market Summary": "http://localhost:5000/market-summary",
+        #     "Technical Indicators": "http://localhost:5000/technical-indicators/",
+        #     "Historical Data": "http://localhost:5000/historical-data/",
+        #     "Generate Data": "http://localhost:5000/generate-finance-data",
+        # }
         endpoints = {
-            "Market Summary": "http://localhost:5000/market-summary",
-            "Technical Indicators": "http://localhost:5000/technical-indicators/",
-            "Historical Data": "http://localhost:5000/historical-data/",
-            "Generate Data": "http://localhost:5000/generate-finance-data",
-        }
+    "Market Summary": "https://finance-data-api-9l3n.onrender.com/market-summary",
+    "Technical Indicators": "https://finance-data-api-9l3n.onrender.com/technical-indicators/",
+    "Historical Data": "https://finance-data-api-9l3n.onrender.com/historical-data/",
+    "Generate Data": "https://finance-data-api-9l3n.onrender.com/generate-finance-data",
+}
+
 
         # Endpoint Selection
         selected_endpoint = st.selectbox("Select Endpoint", list(endpoints.keys()))

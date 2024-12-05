@@ -55,6 +55,14 @@ The **Advanced Finance Analytics Dashboard** is an interactive Streamlit applica
   - Anomaly detection thresholds.
   - Data handling methods (e.g., outlier detection, missing value imputation).
 - Save preferences for future sessions.
+# 📊 Financial Analytics Dashboard - Premium Version 
+![image](https://github.com/user-attachments/assets/b78d82b3-c35a-408c-a7f2-d86491260559)
+
+
+## 🌟 [English]
+
+### 🎯 Overview
+A comprehensive financial analytics platform built with Streamlit, offering advanced data analysis capabilities, technical indicators, and portfolio management tools.
 
 ### 7. API Integration
 - Authenticate using API keys for secured endpoints.
@@ -73,23 +81,80 @@ The **Advanced Finance Analytics Dashboard** is an interactive Streamlit applica
    cd <repository_folder>
    ```
 
-2. Install required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+# Install dependencies
+pip install -r requirements.txt
 
-3. Create a `.env` file with the following environment variables:
-   ```
-   API_KEY=<your_api_key>
-   API_SECRET=<your_api_secret>
-   FLASK_DEBUG=<True/False>
-   PORT=<port_number>
-   ```
+# Run the application
+streamlit run main.py
+```
 
-4. Run the application:
-   ```bash
-   streamlit run main.py
-   ```
+### 🚀 Features
+
+#### 💼 Data Management
+- 📁 Multi-format support (CSV, Excel, JSON)
+- ⚡ Real-time data filtering
+- 📅 Custom date range selection
+- 🔄 Multi-symbol support
+
+#### 📈 Analytics Features
+- **📊 Main Dashboard**
+  * Real-time visualization
+  * Candlestick charts
+  * Volume analysis
+  * Moving averages
+
+- **🔬 Advanced Analytics**
+  * Correlation heatmaps
+  * PCA Analysis
+  * K-means clustering
+  * Linear Regression
+  * Statistical summaries
+
+- **📉 Technical Analysis**
+  * RSI
+  * MACD
+  * Bollinger Bands
+  * Custom indicators
+
+- **⚠️ Risk Analytics**
+  * VaR calculations
+  * Maximum Drawdown
+  * Returns distribution
+  * Risk metrics
+
+### 🛠️ Technical Requirements
+```txt
+# Core packages
+streamlit>=1.31.0
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Data visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+```
+[View full requirements.txt](requirements.txt)
+
+---
+
+## 🌟 [Italiano]
+
+### 🎯 Panoramica
+Una piattaforma completa di analisi finanziaria costruita con Streamlit, che offre capacità avanzate di analisi dati, indicatori tecnici e strumenti di gestione del portafoglio.
+![image](https://github.com/user-attachments/assets/cb2dda45-fce2-4692-90df-13854bf57e5b)
+
+### ⚡ Avvio Rapido
+```bash
+# Clona il repository
+git clone [url-repository]
+
+# Installa le dipendenze
+pip install -r requirements.txt
+
+# Avvia l'applicazione
+streamlit run main.py
+```
 
 ## Usage
 1. Launch the app and upload your financial dataset.

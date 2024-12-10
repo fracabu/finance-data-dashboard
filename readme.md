@@ -143,7 +143,8 @@ plotly>=5.18.0
 
 ### 🎯 Panoramica
 Una piattaforma completa di analisi finanziaria costruita con Streamlit, che offre capacità avanzate di analisi dati, indicatori tecnici e strumenti di gestione del portafoglio.
-![image](https://github.com/user-attachments/assets/cb2dda45-fce2-4692-90df-13854bf57e5b)
+
+![advanced data dash screen api](https://github.com/user-attachments/assets/3b455aa1-08e9-4f35-8251-ff93ff6b7c32)
 
 ### ⚡ Avvio Rapido
 ```bash

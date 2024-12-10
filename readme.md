@@ -56,8 +56,9 @@ The **Advanced Finance Analytics Dashboard** is an interactive Streamlit applica
   - Data handling methods (e.g., outlier detection, missing value imputation).
 - Save preferences for future sessions.
 # 📊 Financial Analytics Dashboard - Premium Version 
-![image](https://github.com/user-attachments/assets/b78d82b3-c35a-408c-a7f2-d86491260559)
 
+
+![advanced dash screen main](https://github.com/user-attachments/assets/80ce0425-06af-40d6-ab2d-419d6571b209)
 
 ## 🌟 [English]
 
